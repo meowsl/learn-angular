@@ -1,0 +1,23 @@
+<div class="registration">
+  <h3 class="registration__title">Регистрация</h3>
+  <form
+    (submit)="sendRegistration(registrationForm)"
+    class="registration-form"
+  >
+    <label for="email-input">Email</label>
+    <input
+      class="registration-form__email"
+      type="text"
+      name="email-input"
+      [(ngModel)]="registrationForm.email"
+    >
+    <label for="password-input">Password</label>
+    <input
+      class="registration-form__password"
+      type="password"
+      name="password-input"
+      [(ngModel)]="registrationForm.password"
+    >
+    <button type="submit">Зарегистрироваться!</button>
+  </form>
+</div>

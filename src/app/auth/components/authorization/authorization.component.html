@@ -1,0 +1,23 @@
+<div class="authorization">
+  <h3 class="authorization__title">Авторизация</h3>
+  <form
+    (submit)="getAuthData(authData)"
+    class="authorization-form"
+  >
+    <label for="email-input">Email</label>
+    <input
+      class="authorization-form__email"
+      type="text"
+      name="email-input"
+      [(ngModel)]="authData.email"
+    >
+    <label for="password-input">Password</label>
+    <input
+      class="authorization-form__password"
+      type="password"
+      name="password-input"
+      [(ngModel)]="authData.password"
+    >
+    <button type="submit">Авторизоваться</button>
+  </form>
+</div>

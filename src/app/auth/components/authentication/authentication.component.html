@@ -1,0 +1,10 @@
+<div class="auth-container">
+  <app-authorization *ngIf="!isRegistration"></app-authorization>
+  <app-registration *ngIf="isRegistration"></app-registration>
+  <button
+    type="button"
+    (click)="toggleForm()"
+  >
+    {{ isRegistration ? 'Уже есть аккаунт?' : 'Нет аккаунта?' }}
+  </button>
+</div>
