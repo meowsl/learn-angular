@@ -1,0 +1,10 @@
+.index-page{
+
+  overflow: hidden;
+
+  &__title{
+    font-size: clamp(24px, 5vw, 36px);
+    text-align: center;
+    color: rgb(204, 0, 204)
+  }
+}

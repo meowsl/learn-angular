@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-authentication',
+  selector: 'auth-page',
   templateUrl: './authentication.component.html',
   styleUrl: './authentication.component.scss'
 })
-export class AuthenticationComponent {
+export class AuthenticationPage {
   public isRegistration: boolean = false
 
   protected toggleForm(): void {

@@ -99,11 +99,12 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets"
+                "input": "./src/assets/",
+                "output": "assets"
               }
             ],
             "styles": [
-              "src/scss/index.scss"
+              "./src/scss/index.scss"
             ],
             "scripts": []
           }

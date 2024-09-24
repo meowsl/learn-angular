@@ -5,13 +5,13 @@ import { FormsModule } from '@angular/forms'
 
 import { RegistrationComponent } from './components/registration/registration.component'
 import { AuthorizationComponent } from './components/authorization/authorization.component';
-import { AuthenticationComponent } from './components/authentication/authentication.component'
+import { AuthenticationPage } from './components/authentication/authentication.component'
 
 @NgModule({
   declarations: [
     RegistrationComponent,
     AuthorizationComponent,
-    AuthenticationComponent
+    AuthenticationPage
   ],
   imports: [
     CommonModule,
@@ -19,7 +19,7 @@ import { AuthenticationComponent } from './components/authentication/authenticat
     FormsModule
   ],
   exports: [
-    AuthenticationComponent
+    AuthenticationPage
   ]
 })
 export class AuthModule { }
